@@ -1,0 +1,36 @@
+.movieItem {
+  position: relative;
+  flex: 1 1 130px;
+  max-width: 280px;
+  margin: 10px;
+  text-decoration: none;
+  &-image {
+    width: 100%;
+    background: #d8d8d8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+  .movie-rate {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+  }
+  &-title {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #e6f7ff;
+  }
+  &-date {
+    font-size: 12px;
+    line-height: 14px;
+    color: #a1d1e6;
+  }
+
+  @media only screen and (min-width: 768px) {
+    flex: 1 0 154px;
+    &:empty {
+      height: 0;
+    }
+  }
+}

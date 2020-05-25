@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,500&display=swap");
+$Roboto: "Roboto", sans-serif;
+$Montserrat: "Montserrat", sans-serif;
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background: #081b23;
+  font-family: $Roboto;
+}
+h1,
+h2 {
+  font-family: $Montserrat;
+  font-weight: bold;
+  color: #e3f4fc;
+}
+h1 {
+  font-size: 28px;
+  line-height: 30px;
+}
+h2 {
+  font-size: 20px;
+  line-height: 24px;
+}
+p {
+  margin: 7px 0;
+  padding: 0;
+  font: 16px/24px $Roboto;
+}
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.app {
+  &-main {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    &-title {
+      margin: 0px 10px;
+    }
+    &-gallery {
+      display: flex;
+      width: 100%;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+//deatils screen styling
+.movie {
+  &-main {
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+    &-head {
+      display: inline-block;
+      width: 100%;
+      padding-bottom: 30px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #0f303d;
+      &-img {
+        margin-top: -100px;
+        max-width: 154px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5),
+          0px 8px 16px rgba(0, 0, 0, 0.5), 0px 16px 32px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        float: left;
+        margin-right: 20px;
+      }
+      &-details {
+        font: 12px/ 21px $Montserrat;
+        color: #b8d8e6;
+      }
+    }
+    &-body {
+      display: inline-block;
+      width: 100%;
+      color: #9fbbc7;
+      min-height: 400px;
+    }
+  }
+}
+
+.no-results {
+  padding: 10px;
+  color: #fff;
+}

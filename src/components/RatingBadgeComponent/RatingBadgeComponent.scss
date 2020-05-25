@@ -1,0 +1,14 @@
+.movie-rate {
+  padding: 4px 10px 3px;
+  background: #01d277;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  &.medium {
+    background: #4902a3;
+  }
+  &.low {
+    background: #d1225b;
+  }
+}
